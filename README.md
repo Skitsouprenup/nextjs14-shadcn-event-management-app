@@ -6,7 +6,7 @@ I have a demo video of this project in this [link](https://youtu.be/pMVWLpk30h8)
 
 # Technologies Used
 * **Typescript**
-* **NextJS14**
+* **NextJS 14**
 * **Shadcn**
 * **Stripe**
 * **Clerk**
