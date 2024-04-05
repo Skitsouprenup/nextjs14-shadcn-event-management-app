@@ -11,6 +11,7 @@ I have a demo video of this project in this [link](https://youtu.be/pMVWLpk30h8)
 * **Stripe**
 * **Clerk**
 * **MongoDB**
+* **Mongoose**
 * **Tailwind**
 * **Zod**
 
