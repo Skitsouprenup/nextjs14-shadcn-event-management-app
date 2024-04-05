@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# nextjs14-shadcn-event-management-app
+A Simple and responsive event manager app using nextjs14 with shadcn and tailwind for styling,
+stripe for payment, clerk for authentication and zod for form validation.
 
-## Getting Started
+I have a demo video of this project in this [link](https://youtu.be/pMVWLpk30h8)
 
-First, run the development server:
+# Technologies Used
+* **Typescript**
+* **NextJS14**
+* **Shadcn**
+* **Stripe**
+* **Clerk**
+* **Tailwind**
+* **Zod**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Testing this project
+You can clone this project and test it for yourself. However, you need to create .env files
+and add these following variables:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**NEXT_PUBLIC_SERVER_URL** -> base URL of your app. e.g. http://localhost:3000  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY** -> Public key that can be found in your clerk dashboard in developers section.  
+**CLERK_SECRET_KEY** -> Secret key that can be found in your clerk dashboard in developers section.   
+**CLERK_WEBHOOK_SECRET** -> Secret webhook key that can be found in your clerk dashboard in webhooks section. 
+You must create a webhook first in order to get this key.  
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**MONGO_DB_URI** -> If you're using atlas, look at your mongodb dashboard to get this URI, it starts with: 'mongodb+srv://'.  
 
-## Learn More
+**STRIPE_SECRET_KEY** -> Stripe secret key. You can get this in your stripe dashboard under developers section.  
+**NEXT_PUBLIC_STRIPE_PUBLIC_KEY** -> Stripe public key. You can get this in your stripe dashboard under developers section.  
+**STRIPE_WEBHOOK_SECRET** -> Secret key stripe event webhooks. You can get this in your stripe dashboard in the webhooks section.  
 
-To learn more about Next.js, take a look at the following resources:
+**NEXT_PUBLIC_CLERK_SIGN_IN_URL** -> Redirect URL when user tries to login. Example: /login  
+**NEXT_PUBLIC_CLERK_SIGN_UP_URL** -> Redirect URL when user tries to register. Example: /register  
+**NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL** -> Redirect URL when user has logged in. Example: '/' which is equivalent to root page.  
+**NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL** -> Redirect URL when user has logged out. Example: '/' which is equivalent to root page.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**UPLOADTHING_SECRET** -> Secret key that can be found in uploadthing dashboard under 'API keys' section.  
+**UPLOADTHING_APP_ID** -> Secret APP ID that can be found in uploadthing dashboard under 'API keys' section  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
