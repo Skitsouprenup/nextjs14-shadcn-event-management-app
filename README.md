@@ -39,7 +39,7 @@ You must create a webhook first in order to get this key.
 **UPLOADTHING_APP_ID** -> Secret APP ID that can be found in uploadthing dashboard under 'API keys' section  
 
 ## Webhooks
-This project uses stripe and clerk webhooks to be enabled. Create webhooks in each
+This project uses stripe and clerk webhooks. Create webhooks in each
 respective platform. Then, to test webhooks, open ngrok and create a tunnel between your
 app and ngrok.
 
