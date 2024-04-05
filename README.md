@@ -17,7 +17,7 @@ I have a demo video of this project in this [link](https://youtu.be/pMVWLpk30h8)
 You can clone this project and test it for yourself. However, you need to create .env files
 and add these following variables:
 
-**NEXT_PUBLIC_SERVER_URL** -> base URL of your app. e.g. http://localhost:3000  
+**NEXT_PUBLIC_SERVER_URL** -> base URL of your app. e.g. `http://localhost:3000`  
 
 **NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY** -> Public key that can be found in your clerk dashboard in developers section.  
 **CLERK_SECRET_KEY** -> Secret key that can be found in your clerk dashboard in developers section.   
@@ -37,4 +37,9 @@ You must create a webhook first in order to get this key.
 
 **UPLOADTHING_SECRET** -> Secret key that can be found in uploadthing dashboard under 'API keys' section.  
 **UPLOADTHING_APP_ID** -> Secret APP ID that can be found in uploadthing dashboard under 'API keys' section  
+
+## Webhooks
+This project uses stripe and clerk webhooks to be enabled. Create webhooks in each
+respective platform. Then, to test webhooks, open ngrok and create a tunnel between your
+app and ngrok.
 
